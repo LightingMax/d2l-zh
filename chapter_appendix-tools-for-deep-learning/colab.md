@@ -3,15 +3,15 @@
 
 我们在 :numref:`sec_sagemaker` 和 :numref:`sec_aws` 和 :numref:`sec_aws` 中介绍了如何在 AWS 上运行这本书。另一种选择是在 [Google Colab](https://colab.research.google.com/) 上运行这本书，如果你有谷歌帐户，它会提供免费的 GPU。 
 
-要在 Colab 上运行一个部分，你只需点击该部分标题右侧的 `Colab` 按钮，例如 :numref:`fig_colab` 中的按钮。  
+要在 Colab 上运行一个章节，你只需要选择你喜欢的版本,再点击改章节标题右侧的 `Colab` 按钮，例如 :numref:`fig_colab` 中的按钮。  
 
-![Open a section on Colab](../img/colab.png)
+![Open a section on Colab](../img/colab-zh.png)
 :width:`300px`
 :label:`fig_colab`
 
-当你第一次执行代码单元格时，你将收到一条警告消息，如 :numref:`fig_colab2` 所示。你可以点击 “无论如何运行” 来忽略它。 
+当你第一次执行代码单元格时，你将收到一条警告消息，如 :numref:`fig_colab2` 所示。你可以点击 “仍然运行” 来忽略它。 
 
-![The warning message for running a section on Colab](../img/colab-2.png)
+![The warning message for running a section on Colab](../img/colab-2-zh.png)
 :width:`300px`
 :label:`fig_colab2`
 
