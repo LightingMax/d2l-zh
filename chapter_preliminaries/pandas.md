@@ -5,7 +5,8 @@
 
 ## 读取数据集
 
-举一个例子，我们首先(**创建一个人工数据集，并存储在csv（逗号分隔值）文件**)`../data/house_tiny.csv`中。以其他格式存储的数据也可以通过类似的方式进行处理。下面的`mkdir_if_not_exist`函数可确保目录`../data`存在。注意，注释`#@save`是一个特殊的标记，该标记下方的函数、类或语句将保存在`d2l`软件包中，以便以后可以直接调用它们（例如`d2l.mkdir_if_not_exist(path)`）而无须重新定义。
+举一个例子，我们首先(**创建一个人工数据集，并存储在csv（逗号分隔值）文件**)`../data/house_tiny.csv`中。以其他格式存储的数据也可以通过类似的方式进行处理。
+<!-- 下面的`mkdir_if_not_exist`函数可确保目录`../data`存在。注意，注释`#@save`是一个特殊的标记，该标记下方的函数、类或语句将保存在`d2l`软件包中，以便以后可以直接调用它们（例如`d2l.mkdir_if_not_exist(path)`）而无须重新定义。 -->
 
 下面我们将数据集按行写入CSV文件中。
 
@@ -13,7 +14,7 @@
 #@tab all
 import os
 
-os.makedirs(os.path.join('..', 'data'), exist_ok=True)
+os.makedirs(os.path.join('..', 'data'), exist_ok=True) # 注意exist_ok=ture表示会覆盖原有文件夹,以保证`../data`被创建
 data_file = os.path.join('..', 'data', 'house_tiny.csv')
 with open(data_file, 'w') as f:
     f.write('NumRooms,Alley,Price\n')  # 列名
@@ -31,7 +32,7 @@ with open(data_file, 'w') as f:
 # !pip install pandas
 import pandas as pd
 
-data = pd.read_csv(data_file)
+data = pd.read_csv(data_file) # 默认第一行数据为列名
 print(data)
 ```
 
